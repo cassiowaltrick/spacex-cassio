@@ -2,9 +2,11 @@ import {useQuery} from 'react-query';
 import axios from 'axios';
 import { Table, TD,TH, Title,Observacao } from './styles';
 
+const url = process.env.NODE_ENV==='production'? process.env.REACT_APP_API_URL: 'http://localhost:8000';
+
 export function PastLaunches() {
   const {data,isFetching} = useQuery('ultimosLancamentos',async()=>{
-    const response = await axios.get('https://spacex-backend-cassio.herokuapp.com/ultimosLancamentos');
+    const response = await axios.get(url+'/ultimosLancamentos');
     return response.data;
   },{
     staleTime: 60000 // 1 minuto
