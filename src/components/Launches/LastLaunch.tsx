@@ -9,7 +9,7 @@ type Launch = {
 
 export function LastLaunch() {
   const {data,isFetching} = useQuery<Launch[]>('ultimoLancamento',async()=>{
-    const response = await axios.get('http://localhost:8000/ultimoLancamento')
+    const response = await axios.get('https://spacex-backend-cassio.herokuapp.com/ultimoLancamento')
     return response.data;
   },{
     staleTime: 60000 // 1 minuto

@@ -9,7 +9,7 @@ type Launch = {
 
 export function PastLaunches() {
   const {data,isFetching} = useQuery<Launch[]>('ultimosLancamentos',async()=>{
-    const response = await axios.get('http://localhost:8000/ultimosLancamentos')
+    const response = await axios.get('https://spacex-backend-cassio.herokuapp.com/ultimosLancamentos')
 
     return response.data;
   },{

@@ -9,7 +9,7 @@ type Launch = {
 
 export function UpcomingLaunches() {
   const {data,isFetching} = useQuery<Launch[]>('proximosLancamentos',async()=>{
-    const response = await axios.get('http://localhost:8000/proximosLancamentos')
+    const response = await axios.get('https://spacex-backend-cassio.herokuapp.com/proximosLancamentos')
 
     return response.data;
   },{
