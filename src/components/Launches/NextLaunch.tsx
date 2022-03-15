@@ -1,5 +1,5 @@
 import {useQuery} from 'react-query';
-import api from '../../services/api';
+import axios from 'axios';
 import { Table, TD,TH, Title } from './styles';
 
 type Launch = {
@@ -9,7 +9,7 @@ type Launch = {
 
 export function NextLaunch() {
   const {data,isFetching} = useQuery<Launch[]>('proximoLancamento',async()=>{
-    const response = await api.get('proximoLancamento')
+    const response = await axios.get('https://spacex-backend-cassio.herokuapp.com/proximoLancamento')
     return response.data;
   },{
     staleTime: 60000 // 1 minuto
