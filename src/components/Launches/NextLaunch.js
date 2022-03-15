@@ -25,7 +25,7 @@ export function NextLaunch() {
           {data?.map(launch=>{
               return (
                 <tr>
-                  <TD>{process.env.NODE_ENV}</TD>
+                  <TD>{launch.name}</TD>
                   <TD>{launch.date_local}</TD>
                 </tr>
               )
