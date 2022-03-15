@@ -4,7 +4,7 @@ import { Table, TD,TH, Title } from './styles';
 
 export function LastLaunch() {
   const {data,isFetching} = useQuery('ultimoLancamento',async()=>{
-    const response = await axios.get('http://localhost:8000/ultimoLancamento')
+    const response = await axios.get('http://localhost:8000/ultimoLancamento');
     return response.data;
   },{
     staleTime: 60000 // 1 minuto

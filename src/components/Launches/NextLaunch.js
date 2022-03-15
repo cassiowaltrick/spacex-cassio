@@ -4,7 +4,7 @@ import { Table, TD,TH, Title } from './styles';
 
 export function NextLaunch() {
   const {data,isFetching} = useQuery('proximoLancamento',async()=>{
-    const response = await axios.get('http://localhost:8000/proximoLancamento')
+    const response = await axios.get('http://localhost:8000/proximoLancamento');
     return response.data;
   },{
     staleTime: 60000 // 1 minuto
