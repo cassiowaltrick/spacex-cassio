@@ -1,5 +1,5 @@
 import {useQuery} from 'react-query';
-import axios from "axios";
+import api from '../../services/api';
 import { Table, TD,TH, Title } from './styles';
 
 type Launch = {
@@ -9,7 +9,7 @@ type Launch = {
 
 export function LastLaunch() {
   const {data,isFetching} = useQuery<Launch[]>('ultimoLancamento',async()=>{
-    const response = await axios.get('https://spacex-backend-cassio.herokuapp.com/ultimoLancamento')
+    const response = await api.get('ultimoLancamento')
     return response.data;
   },{
     staleTime: 60000 // 1 minuto
