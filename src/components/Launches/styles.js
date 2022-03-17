@@ -4,7 +4,8 @@ export const Item = styled.div`
   padding:1em;
   margin:1em;
   border:1px solid purple;
-  background-color:orange;
+  background-color:white;
+  color:purple;
   display:flex;
   justify-content:space-around;
 `
