@@ -5,10 +5,10 @@ Este projeto é do FrontEnd.
 Este projeto foi desenvolvido por Cássio Waltrick.
 A ideia dele é a execução de um desafio, onde deveria executar consultas na API da SPACE X que está sendo buscada e retornada pelo BackEnd (https://github.com/cassiowaltrick/spacex-cassio-backend) e retornar as seguintes consultas.
 
-● Próximo lançamento;
-● Último lançamento;
-● Próximos lançamentos;
-● Lançamentos passados;
+● Próximo lançamento\
+● Último lançamento\
+● Próximos lançamentos\
+● Lançamentos passados
 
 ## Scripts Disponíveis
 
