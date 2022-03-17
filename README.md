@@ -1,6 +1,6 @@
 # Objetivo do projeto
 
-Este projeto é do FrontEnd.
+Este projeto é do FrontEnd. (link para aplicação implantada no Heroku: https://spacex-frontend-cassio.herokuapp.com/)
 
 Este projeto foi desenvolvido por Cássio Waltrick.
 A ideia dele é a execução de um desafio, onde deveria executar consultas na API da SPACE X que está sendo buscada e retornada pelo BackEnd (https://github.com/cassiowaltrick/spacex-cassio-backend) e retornar as seguintes consultas.
