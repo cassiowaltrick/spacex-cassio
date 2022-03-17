@@ -5,7 +5,6 @@ export const Item = styled.div`
   margin:1em;
   border:1px solid purple;
   background-color:orange;
-  color:black;
   display:flex;
   justify-content:space-around;
 `
