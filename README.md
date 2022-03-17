@@ -28,7 +28,7 @@ Você também pode ver erros no console.
 
 ## Explicação de como foi desenvolvido o frontend
 
-Essa aplicação tinha o objetivo de uma integração com o HotJar, Google Analytics e Google Optimize, então isso foi feito utilizando scripts prontos fornecidos pelas empresas e incluídas no index.js.\
+Essa aplicação tinha o objetivo de uma integração com o HotJar, Google Analytics e Google Optimize, então isso foi feito utilizando scripts prontos fornecidos pelas empresas (Google e HotJar) e incluídas no 'index.js'.\
 Em App.js foi definido todas as rotas do sistema, o Header e o GlobalStyle.
 GlobalStyle é uma folha de estilo que vai servir para o sistema inteiro.
 No frontend foi criado uma pasta 'components' dentro da pasta 'src' onde estão os componentes 'Header', 'Launches', 'Pagination'.\
